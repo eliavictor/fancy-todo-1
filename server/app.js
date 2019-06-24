@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 const errHandling = require('./helpers/errHandling')
 const cors = require('cors')
 // mongoose.set('useFindAndModify', false);
-mongoose.connect(process.env.MONGODB_URL, {useNewUrlParser:true})
+mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser:true})
 .then(()=> {
     console.log('Database connected')
 })
